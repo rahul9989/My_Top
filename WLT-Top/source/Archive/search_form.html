@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Sign Of Portal</title>
+
+	<link href="../css/main.css" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+	<!-- Header Html Start -->
+	<header>
+		<div class="container">
+			<div class="header">
+				<img src="../images/logo.png" alt="Logo">
+				<ul class="header__top-nav">
+					<li class="header__top-nav--mobile-nav">
+						<a href="#">Nav</a>
+					</li>
+					<li class="header__top-nav--help">
+						<a href="#">Help</a>
+					</li>
+					<li class="header__top-nav--faq">
+						<a href="#">faq</a>
+					</li>
+					<li class="header__top-nav--sign">
+						<a href="#">Sign in</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!-- Header Html End -->
+
+	<section class="middle-part">
+		<div class="container">
+			<nav class="middle-part__left-nav middle-part__simple-nav">
+				<!-- Simple Nav tabs Start -->
+				<div class="panel-group">
+					<a class="mobile-nav-close" href="#">Close</a>
+					<div class="panel panel-default">
+					    <div class="panel-heading">
+				        	<a href="find-account.html" class="active">Search</a>
+					    </div>
+					</div>
+					<div class="panel panel-default">
+					    <div class="panel-heading">
+				        	<a href="find-statementOf-Interest.html">User Maintenance</a>
+					    </div>
+					</div>
+					<div class="panel panel-default">
+					    <div class="panel-heading">
+				        	<a href="change-password.html">Change Password</a>
+					    </div>
+					</div>
+				</div>
+			</nav>
+			<!-- Simple Nav tabs End -->
+
+			<!-- Tab panes -->
+			<div class="middle-part__tab">
+				<h2 class="middle-part__tab--head-with-icon">Search Form</h2>
+				<hr class="middle-part__tab--devider">
+				<!-- Simple Form Html Start -->
+				<section class="simple-form">
+					<h3 class="form-heading">Parameters</h3>
+					<form>
+						<div class="simple-form__form-group row">
+							<div class="col-sm-6 col-md-3">
+								<label for="product" class="simple-form__form-group--label">Product</label>
+							    <select id="product" class="four-column">
+							    	<option selected disabled>Product</option>
+							    	<option>Product1</option>
+							    	<option>Product2</option>
+							    	<option>Product3</option>
+							    	<option>Product4</option>
+							    	<option>Product5</option>
+							    </select>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<label for="PolicyNumber" class="simple-form__form-group--label">Policy Number</label>
+						    	<input type="text" class="simple-form__form-group--input" name="PolicyNumber" id="PolicyNumber" placeholder="PolicyNumber">
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<label for="Date" class="simple-form__form-group--label">Date </label>
+						    	<input type="text" class="simple-form__form-group--input datetimepicker" name="Date" id="Date">
+							</div>
+						</div>
+
+						<div class="simple-form__form-group row">
+							<div class="col-sm-6 col-md-3">
+								<label for="DocType" class="simple-form__form-group--label">Doc Type</label>
+							    <select id="DocType" class="four-column">
+							    	<option selected disabled>Doc Type</option>
+							    	<option>Doc Type1</option>
+							    	<option>Doc Type2</option>
+							    	<option>Doc Type3</option>
+							    	<option>Doc Type4</option>
+							    	<option>Doc Type5</option>
+							    </select>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<label for="ZipCode" class="simple-form__form-group--label">Zip Code</label>
+						    	<input type="text" class="simple-form__form-group--input" name="ZipCode" id="ZipCode" placeholder="ZipCode">
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<label for="SpoolName" class="simple-form__form-group--label">Spool Name</label>
+						    	<input type="text" class="simple-form__form-group--input" name="SpoolName" id="SpoolName" placeholder="SpoolName">
+							</div>
+							<div class="col-sm-6 col-md-2">
+								<label for="PageCount" class="simple-form__form-group--label">Page Count</label>
+							    <select id="PageCount" class="four-column">
+							    	<option selected disabled>Page Count</option>
+							    	<option>1</option>
+							    	<option>2</option>
+							    	<option>3</option>
+							    	<option>4</option>
+							    	<option>5</option>
+							    </select>
+							</div>
+						</div>
+					</form>
+
+					<h3 class="form-heading">Sorting Criteria</h3>
+
+					<form>
+						<div class="simple-form__form-group row">
+							<div class="col-sm-12 col-md-3">
+							    <select id="product" class="four-column">
+							    	<option selected disabled>Select</option>
+							    	<option>Select1</option>
+							    	<option>Select2</option>
+							    	<option>Select3</option>
+							    	<option>Select4</option>
+							    	<option>Select5</option>
+							    </select>
+							</div>
+							<div class="col-sm-12 col-md-3">
+						    	<label class="custom-radio">Ascending
+									<input type="radio" checked="checked" name="radio">
+									<span class="checkmark"></span>
+								</label>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<label class="custom-radio">Descending
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+						<div class="simple-form__form-group row">
+							<div class="col-sm-12 col-md-3">
+							    <select id="product" class="four-column">
+							    	<option selected disabled>Select</option>
+							    	<option>Select1</option>
+							    	<option>Select2</option>
+							    	<option>Select3</option>
+							    	<option>Select4</option>
+							    	<option>Select5</option>
+							    </select>
+							</div>
+							<div class="col-sm-12 col-md-3">
+						    	<label class="custom-radio">Ascending
+									<input type="radio" checked="checked" name="radio">
+									<span class="checkmark"></span>
+								</label>
+							</div>
+							<div class="col-sm-12 col-md-3">
+								<label class="custom-radio">Descending
+									<input type="radio" name="radio">
+									<span class="checkmark"></span>
+								</label>
+							</div>
+						</div>
+						<button type="submit" class="default-btn">search</button>
+						<button type="submit" class="default-btn">Clear</button>
+						<button type="submit" class="default-btn">refresh</button>
+					</form>
+				</section>
+				<!-- Simple Form Html End -->
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer Html Start -->
+	<footer>
+		<div class="container">
+			<p>&copy; 2017 Williams Lea Tag</p>
+		</div>
+	</footer>
+	<!-- Footer Html End -->
+	
+	<script src="../js/sign_of.min.js"></script>
+	<script src="../js/custom.js"></script>
+</body>
+</html>
