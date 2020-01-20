@@ -1,0 +1,127 @@
+
+.marketing-item-section{
+	.table-accordian-section {
+
+		.head-table-accordian {
+			tr {
+				th {
+					width: 120px;
+				}
+			}
+		}
+
+		.panel-body {
+			> table {
+				width: $full;
+				background-color: $accordian-table-head;
+
+				tr {
+					th {
+						@include font-size(14);
+						color: $black;
+						@include space(padding, top, $rem-pad);
+						@include space(padding, bottom, $rem-pad);
+
+						&:first-child {
+							@include space(padding, left, $large);
+							width: $x3-width;
+						}
+
+						&:nth-child(2) {
+							width: $XLLarge;
+							@include space(padding, left, $rem-pad);
+							
+						}
+						&:nth-child(3) {
+							width: $XLLarge;
+							@include space(padding, left, 5px);
+						}
+					}
+				}
+			}
+		}
+	}
+	.table-accordian {
+		&.panel-group {
+			min-height: auto;
+			@include space(padding, top, 0);
+			@include space(padding, bottom, 0);
+			@include space(padding, left, 0);
+			@include space(padding, right, 0);
+			@include space(margin, bottom, 0);
+
+			.panel-default {
+				@include space(margin, bottom, 0);
+				@include space(margin, top, 0);
+
+				&:nth-child(odd) {
+					.panel-heading {
+						background-color: transparent;
+					}
+				}
+
+				&:nth-child(even) {
+					.panel-heading {
+						background-color: $odd-row;
+					}
+				}
+
+				.panel-heading {
+					
+					@include border-radius(0);
+					
+
+					h4 {
+						display: flex;
+    					align-items: center;
+						> a {
+							@include space(padding, right, $rem-pad);
+							@include background('../images/sprite2.png', 70.5% -97rem);
+							@include space(padding, all, $extraSmall);
+							width: 50px;
+    						min-height: 45px;
+
+							&.collapsed {
+								@include background('../images/sprite2.png', 70.5% -89.7rem);
+							}
+						}
+					}
+
+					table {
+						width: $full;
+
+						tr {
+							th {
+								@include font-size(14);
+								color: $table-color;
+								//@include space(padding, left, $medium);
+
+								&:first-child {
+									width: $x4-width;
+								}
+
+								&:nth-child(2) {
+									width: $x2-width;
+									
+								}
+								&:nth-child(3) {
+									width: $x2-width;
+									
+								}
+							}
+						}
+					}
+				}
+
+				.panel-body {
+					@include border(bottom, 0);
+					@include space(padding, all, $small);
+					@include border(top, 1px, solid, $border-color);
+					text-align: center;
+    				font-weight: bold;
+				}
+			}
+		}
+	}
+}
+
